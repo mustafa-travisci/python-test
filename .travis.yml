@@ -4,4 +4,4 @@
   before_install:
    - pip install pytest-print
   script:
-    - pytest
+    - py.test --vv
