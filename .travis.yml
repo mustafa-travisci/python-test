@@ -4,4 +4,4 @@
   before_install:
    - pip install pytest-print
   script:
-    - pytest print.py
+    - echo hello from python
