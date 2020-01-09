@@ -1,6 +1,14 @@
-  dist: trusty
-  language: python
-  python: 3.6   # current default Python on Travis CI
-  services: docker
-  script:
-    - echo hello from python
+dist: bionic
+sudo: required
+group: edge
+services: docker
+language: python
+python: 3.8
+env:
+  - SCENERIO=archiveinterface
+  - SCENERIO=core
+  - SCENERIO=default
+  - SCENERIO=in
+  - SCENERIO=notify
+  - SCENERIO=out
+install: pip install ansible molecule docker-py pre-commit pylint pep257
