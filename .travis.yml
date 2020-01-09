@@ -1,6 +1,6 @@
-  dist: bionic
+  dist: trusty
   language: python
-  python: 3.8   # current default Python on Travis CI
+  python: 3.6   # current default Python on Travis CI
   services: docker
   script:
     - echo hello from python
