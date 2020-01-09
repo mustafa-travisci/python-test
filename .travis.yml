@@ -1,8 +1,5 @@
+  dist: trusty
   language: python
-  python:
-    - "3.6"      # current default Python on Travis CI
-  before_install:
-   - sudo apt-get install -y libxml2-dev
-   - pip install pytest-print
+  python: 3.6   # current default Python on Travis CI
   script:
     - echo hello from python
