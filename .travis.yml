@@ -1,5 +1,5 @@
-  dist: trusty
+  dist: bionic
   language: python
-  python: 3.6   # current default Python on Travis CI
+  python: 3.8   # current default Python on Travis CI
   script:
     - echo hello from python
