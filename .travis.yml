@@ -1,9 +1,9 @@
-dist: bionic
+dist: trusty
 sudo: required
 group: edge
 services: docker
 language: python
-python: 3.8
+python: 3.6
 env:
   - SCENERIO=archiveinterface
   - SCENERIO=core
