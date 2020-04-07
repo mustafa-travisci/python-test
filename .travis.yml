@@ -1,7 +1,20 @@
-language: python
-python: "3.5-dev"
 dist: xenial
+language: python
+matrix:
+  include:
+    - python: 2.6
+      dist: trusty
+    - python: 2.7
+    - python: 3.5
+    - python: 3.6
+    - python: 3.7
+    - python: 3.8
+    - python: 3.8-dev
+
+services:
+  - docker
+
 install:
-    - pip install -U pip
-script:
-    - echo "Success"
+  - pip install tox tox-travis
+
+script: true
