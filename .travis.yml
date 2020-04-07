@@ -1,4 +1,7 @@
 language: python
 python: "3.5-dev"
 dist: xenial
-script: true
+install:
+    - pip install -U pip
+script:
+    - echo "Success"
