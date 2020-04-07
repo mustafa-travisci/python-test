@@ -1,4 +1,4 @@
-dist: xenial
 language: python
-python: 3.6
-script: echo test
+python: "3.5-dev"
+dist: xenial
+script: true
