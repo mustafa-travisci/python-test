@@ -2,4 +2,5 @@ version: ~> 1.0
 install:
   - echo main_yml
 import:
-  source: mustafa-travisci/testBuilds:install.yml
+  - source: mustafa-travisci/testBuilds:install.yml
+    mode: deep_merge
