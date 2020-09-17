@@ -1,6 +1,5 @@
 import:
   - source: mustafa-travisci/testBuilds:install.yml
-    mode: deep_merge_prepend
     
 install:
   - echo main_yml
